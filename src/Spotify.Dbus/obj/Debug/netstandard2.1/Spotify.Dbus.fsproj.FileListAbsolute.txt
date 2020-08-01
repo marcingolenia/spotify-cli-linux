@@ -1,0 +1,8 @@
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/bin/Debug/netstandard2.1/Spotify.Dbus.deps.json
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/bin/Debug/netstandard2.1/Spotify.Dbus.dll
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/bin/Debug/netstandard2.1/Spotify.Dbus.pdb
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/obj/Debug/netstandard2.1/Spotify.Dbus.fsprojAssemblyReference.cache
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/obj/Debug/netstandard2.1/Spotify.Dbus.AssemblyInfoInputs.cache
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/obj/Debug/netstandard2.1/Spotify.Dbus.AssemblyInfo.fs
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/obj/Debug/netstandard2.1/Spotify.Dbus.dll
+/home/marcin/projects/spotify-cli-linux/src/Spotify.Dbus/obj/Debug/netstandard2.1/Spotify.Dbus.pdb
