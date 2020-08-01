@@ -38,7 +38,7 @@ module SpotifyBus =
             }
         }
     
-    let retrieveStatus =
+    let getStatus =
         async {
             let! status = (player.GetAsync<string>("PlaybackStatus") |> Async.AwaitTask)
             return match status with

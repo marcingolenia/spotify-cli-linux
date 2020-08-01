@@ -5,8 +5,8 @@ open Xunit
 open SpotifyBus
 open FsUnit
 
-(*200ms seems to work well. This interval is required to make the tests pass because it takes some time to accept the
-D-Bus message and perform actual actions by Spotify.*)
+(* 200ms seems to work well. This interval is required to make the tests pass because it takes some time to accept the
+D-Bus message and perform actual actions by Spotify. Remember to turn on Spotify ;) *)
 
 [<Fact>]
 let ``GIVEN retrieveCurrentSong WHEN Song is selected in Spotify THEN the title, artist, url, album are retrieved`` () =
@@ -24,28 +24,28 @@ let ``GIVEN send NextSong WHEN Song is changed THEN it is different then previou
     // Arrange
     let songBeforeNext = retrieveCurrentSong |> Async.RunSynchronously
     // Act
-    send NextSong |> Async.RunSynchronously
-    Async.Sleep 500 |> Async.RunSynchronously
+    NextSong |> send |> Async.RunSynchronously
     // Assert
+    Async.Sleep 500 |> Async.RunSynchronously
     let actualSong = retrieveCurrentSong |> Async.RunSynchronously
     songBeforeNext |> should not' (equal actualSong)
     
 [<Fact>]
 let ``GIVEN send Play WHEN Song is Paused THEN the resulting status is Playing`` () =
     // Arrange
-    send Pause |> Async.RunSynchronously
+    Pause |> send |> Async.RunSynchronously
     // Act
-    send Play |> Async.RunSynchronously
-    Async.Sleep 200 |> Async.RunSynchronously
+    Play |> send |> Async.RunSynchronously
     // Assert
-    retrieveStatus |> Async.RunSynchronously |> should equal Playing
+    Async.Sleep 200 |> Async.RunSynchronously
+    getStatus |> Async.RunSynchronously |> should equal Playing
 
 [<Fact>]
 let ``GIVEN send Pause WHEN Song is Playing THEN the resulting status is Paused`` () =
     // Arrange
-    send Play |> Async.RunSynchronously
+    Play |> send |> Async.RunSynchronously
     // Act
-    send Pause |> Async.RunSynchronously
-    Async.Sleep 200 |> Async.RunSynchronously
+    Pause |> send |> Async.RunSynchronously
     // Assert
-    retrieveStatus |> Async.RunSynchronously |> should equal Paused
+    Async.Sleep 200 |> Async.RunSynchronously
+    getStatus |> Async.RunSynchronously |> should equal Paused
