@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".doc", ".doc", "{3AA739B1-93FE-4EE0-B672-24DF9EBE6D5A}"
 ProjectSection(SolutionItems) = preProject
 	README.md = README.md
+	.gitignore = .gitignore
 EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Learning.Lyrics", "tests\Learning.Lyrics\Learning.Lyrics.fsproj", "{97776098-95C2-450D-A577-1DF973DDC595}"

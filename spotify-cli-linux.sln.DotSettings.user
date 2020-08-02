@@ -3,5 +3,13 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::199010F1-4D49-44A7-9591-A77F939377E7::.NETCoreApp,Version=v3.1::Tests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.My test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.Lyrics can be found and deserialized&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.When lyrics are not found exception is thrown with proper message&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6539ec32_002D4700_002D4149_002D8a6a_002Ddfb201f2843c/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="My test" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.When lyrics are not found exception is thrown with proper message&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.Lyrics can be found and deserialized&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
