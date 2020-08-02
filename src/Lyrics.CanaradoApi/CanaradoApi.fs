@@ -42,6 +42,6 @@ module CanaradoApi =
                             | Text jsonText -> jsonText
                             | Binary binary -> Encoding.UTF8.GetString binary 
         match response.StatusCode with
-        | 200 -> Ok ((Json.deserializeEx<CanadaroSuccessResponse> config responseText).Content
+        | 200 -> Some ((Json.deserializeEx<CanadaroSuccessResponse> config responseText).Content
                      |> List.filter(containsArtist artist))
-        | _ -> Error (Json.deserializeEx<CanadaroErrorResponse> config responseText).Status.Message
+        | _ -> None
