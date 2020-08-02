@@ -14,14 +14,14 @@ type Status = {
     Failed: bool
 }
 
-type Content = {
+type Lyric = {
     Title: string
     Lyrics: string
     Artist: string
 }
 
 type CanadaroSuccessResponse = {
-    Content: Content list
+    Content: Lyric list
     Status: Status
 }
 
