@@ -5,7 +5,7 @@ open Spotify.Dbus
 open Arguments
 
 let formatLyric (lyric: CanaradoApi.Lyric) =
-    sprintf "%s - %s %s %s %s" lyric.Artist lyric.Title Environment.NewLine lyric.Lyrics Environment.NewLine
+    sprintf "%s - %s %s%s %s" lyric.Artist lyric.Title Environment.NewLine lyric.Lyrics Environment.NewLine
 
 let retrieveLyrics title artist =
     let lyrics = CanaradoApi.fetch title artist
@@ -13,7 +13,7 @@ let retrieveLyrics title artist =
     | Some lyrics -> ("", lyrics) ||> List.fold (fun state lyric -> state + formatLyric lyric)
     | None -> "Lyrics were not found :("
 
-let errorHandler = ProcessExiter (colorizer = function | ErrorCode.HelpText -> None| _ -> Some ConsoleColor.Red)
+let errorHandler = ProcessExiter (colorizer = function | ErrorCode.HelpText -> None | _ -> Some ConsoleColor.Red)
 
 let execute command =
     async {
@@ -32,7 +32,7 @@ let execute command =
             return None
         | Status ->
             let! status = SpotifyBus.retrieveCurrentSong
-            return Some(sprintf "%s - %s" (status.Artists |> Array.fold (+) ", ") status.Title)
+            return Some(sprintf "%s - %s" (status.Artists |> String.concat " feat ") status.Title)
         | Lyrics ->
             let! status = SpotifyBus.retrieveCurrentSong
             return Some(retrieveLyrics status.Title status.Artists.[0])
