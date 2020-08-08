@@ -1,6 +1,5 @@
 module Tests
 open System
-open Microsoft.VisualStudio.TestPlatform.ObjectModel
 open Spotify.Dbus
 open Xunit
 open SpotifyBus
