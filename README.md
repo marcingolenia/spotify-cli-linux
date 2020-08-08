@@ -4,6 +4,9 @@ F# spotify-cli-linux
 A command line interface to Spotify on Linux.
 This project is inspired by the similar project called [spotify-cli-linux](https://github.com/pwittchen/spotify-cli-linux), which does similar things but it is written in Python.
 
+# Building
+You will need dotnet core 3.1 SDK to build and run the project. You can download it from here: https://dotnet.microsoft.com/download/dotnet-core/3.1. Then just use standard dotnet commands to build, test and run.
+
 # Publishing the app
 dotnet publish -c Release -r linux-x64
 
