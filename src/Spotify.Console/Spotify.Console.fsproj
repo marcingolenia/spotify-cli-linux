@@ -5,12 +5,14 @@
         <RootNamespace>Spotify.Dbus</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
+        <Compile Include="Arguments.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Argu" Version="6.1.1" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\Lyrics.CanaradoApi\Lyrics.CanaradoApi.fsproj" />
       <ProjectReference Include="..\Spotify.Dbus\Spotify.Dbus.fsproj" />
     </ItemGroup>
 </Project>
