@@ -42,7 +42,9 @@ let execute command =
 let main argv =
     let parser = ArgumentParser.Create<Arguments>(errorHandler = errorHandler)
     let command = (parser.Parse argv).GetAllResults() |> List.head
-    match execute command |> Async.RunSynchronously with
-    | Some text -> printfn "%s" text
-    | None -> ()
+    try 
+        match execute command |> Async.RunSynchronously with
+        | Some text -> printfn "%s" text
+        | None -> ()
+    with | ex -> printfn "Couldn't connect to Spotify, is it running?"
     0
