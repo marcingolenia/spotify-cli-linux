@@ -28,7 +28,6 @@ module SpotifyBus =
     let player =
         let player = Connection.Session.CreateProxy<IPlayer>("org.mpris.MediaPlayer2.spotify",
                                                              ObjectPath("/org/mpris/MediaPlayer2"))
-        player.GetAsync<bool>("CanControl") |> Async.AwaitTask |> Async.RunSynchronously |> ignore
         player
         
     let retrieveCurrentSong =
