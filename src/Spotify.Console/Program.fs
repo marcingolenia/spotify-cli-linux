@@ -41,10 +41,13 @@ let execute command =
 [<EntryPoint>]
 let main argv =
     let parser = ArgumentParser.Create<Arguments>(errorHandler = errorHandler)
-    let command = (parser.Parse argv).GetAllResults() |> List.head
-    try 
-        match execute command |> Async.RunSynchronously with
-        | Some text -> printfn "%s" text
-        | None -> ()
-    with | ex -> printfn "Couldn't connect to Spotify, is it running?"
+    let command = (parser.Parse argv).GetAllResults() |> List.tryHead
+    match command with
+    | Some command -> try 
+                        match execute command |> Async.RunSynchronously with
+                        | Some text -> printfn "%s" text
+                        | None -> ()
+                      with | ex -> printfn "Couldn't connect to Spotify, is it running?"
+    | None -> printfn "%s" <| parser.PrintUsage()
     0
+
