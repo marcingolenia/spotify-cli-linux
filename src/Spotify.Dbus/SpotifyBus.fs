@@ -6,7 +6,6 @@ open System.Threading.Tasks
 open Tmds.DBus
 
 module SpotifyBus =
-    exception CannotConnectToSpotify of string
     type Signal = Play | Stop | Pause | NextSong | PreviousSong | PlayPause
     type PlaybackStatus = Playing | Paused | Stopped
     type Song = {
@@ -27,16 +26,10 @@ module SpotifyBus =
         abstract member PlayPauseAsync : unit -> Task
         abstract member GetAsync<'T> : string -> Task<'T>
     let player =
-        try
-            let player = Connection.Session.CreateProxy<IPlayer>("org.mpris.MediaPlayer2.spotify",
-                                                                 ObjectPath("/org/mpris/MediaPlayer2"))
-            player.GetAsync<bool>("CanControl") |> Async.AwaitTask |> Async.RunSynchronously |> ignore
-            player
-        with | :? System.AggregateException as aggregateException ->
-            let firstInnerException = aggregateException.InnerExceptions |> Seq.head
-            match firstInnerException with
-            | :? DBusException -> raise (CannotConnectToSpotify "Cannot connect to Spotify, is it running?")
-            | _ -> raise aggregateException
+        let player = Connection.Session.CreateProxy<IPlayer>("org.mpris.MediaPlayer2.spotify",
+                                                             ObjectPath("/org/mpris/MediaPlayer2"))
+        player.GetAsync<bool>("CanControl") |> Async.AwaitTask |> Async.RunSynchronously |> ignore
+        player
         
     let retrieveCurrentSong =
         async {
