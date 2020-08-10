@@ -35,3 +35,5 @@ You can easily set command alias in Unix, for example:
 `alias spot='dotnet ~/projects/spotify-linux-published/Spotify.Console.dll'`
 
 From now on you can just type `spot --help`.
+Note that this is temporal alias (will be lost on reboot). To create permament alias follow simple 5-steps tutorial:
+https://www.cyberciti.biz/faq/create-permanent-bash-alias-linux-unix/
