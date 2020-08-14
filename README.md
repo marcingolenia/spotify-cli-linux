@@ -1,4 +1,4 @@
-![.NET Core](https://github.com/marcingolenia/spotify-cli-linux/workflows/.NET%20Core/badge.svg?branch=master)
+![.NET Core](https://github.com/marcingolenia/spotify-cli-linux/workflows/.NET%20Core/badge.svg?branch=master) ![F#](https://img.shields.io/badge/Made%20with-F%23-blue)
 
 F# spotify-cli-linux
 A command line interface to Spotify on Linux.
