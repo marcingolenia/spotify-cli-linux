@@ -25,7 +25,6 @@ module CanaradoApi =
     let fetchByTitle title =
         let config = JsonConfig.create (jsonFieldNaming = Json.lowerCamelCase)
         let response = Http.Request(sprintf "https://api.canarado.xyz/lyrics/%s" title, silentHttpErrors = true)
-
         let responseText =
             match response.Body with
             | Text jsonText -> jsonText

@@ -25,7 +25,7 @@ module SpotifyBus =
         abstract member StopAsync : unit -> Task
         abstract member PlayPauseAsync : unit -> Task
         abstract member GetAsync<'T> : string -> Task<'T>
-    let player =
+    let private player =
         Connection.Session.CreateProxy<IPlayer>("org.mpris.MediaPlayer2.spotify",
                                                              ObjectPath("/org/mpris/MediaPlayer2"))        
     

@@ -13,6 +13,7 @@ let retrieveLyrics title artist =
     | Some lyrics -> ("", lyrics) ||> List.fold (fun state lyric -> state + formatLyric lyric)
     | None -> "Lyrics were not found :("
 
+let errorHandler2 = ProcessExiter (fun(code) -> match code with | ErrorCode.HelpText -> None | _ -> Some ConsoleColor.Red)
 let errorHandler = ProcessExiter (colorizer = function | ErrorCode.HelpText -> None | _ -> Some ConsoleColor.Red)
 
 let execute command =

@@ -1,27 +1,18 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=036f2808_002D9e99_002D4a13_002D8999_002Dfffaa0348670/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="GIVEN SpotifyBus RetrieveSongBeingPlayed WHEN Song is played THEN the title and artists is retrieved" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=23d363b1_002D3703_002D4320_002Db148_002D6256dcd0075a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WHEN lyrics are not found THEN NotFound Status code is retrieved with proper message" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::199010F1-4D49-44A7-9591-A77F939377E7::.NETCoreApp,Version=v3.1::Tests&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.My test&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.Lyrics can be found and deserialized&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.When lyrics are not found exception is thrown with proper message&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5eeb83f5_002Dee12_002D4ac8_002Dbca4_002Dfc23b33d13d3/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="GIVEN title and artist WHEN fetchLyrics matches lyrics THEN list of matching lyrics is returned" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::07B9F0D5-7681-4D0E-87D7-3376BD27378F::.NETCoreApp,Version=v3.1::Tests.GIVEN title and artist WHEN fetchLyrics matches lyrics THEN list of matching lyrics is returned&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6539ec32_002D4700_002D4149_002D8a6a_002Ddfb201f2843c/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="My test" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::199010F1-4D49-44A7-9591-A77F939377E7::.NETCoreApp,Version=v3.1::Tests.GIVEN send Pause WHEN Song is Playing THEN the resulting status is Paused&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.WHEN lyrics are not found THEN NotFound Status code is retrieved with proper message&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.WHEN Lyrics can be found THEN they can be deserialized&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::07B9F0D5-7681-4D0E-87D7-3376BD27378F::.NETCoreApp,Version=v3.1::Tests.GIVEN title and artist WHEN fetchLyrics matches lyrics THEN list of matching lyrics is returned&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d6918d9b_002D4e0c_002D4e08_002Da9b1_002D3baea5e08e15/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="WHEN Lyrics can be found THEN they can be deserialized" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+	
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d6918d9b_002D4e0c_002D4e08_002Da9b1_002D3baea5e08e15/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WHEN Lyrics can be found THEN they can be deserialized" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.WHEN Lyrics can be found THEN they can be deserialized&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::07B9F0D5-7681-4D0E-87D7-3376BD27378F::.NETCoreApp,Version=v3.1::Tests.GIVEN title and artist WHEN fetchLyrics matches lyrics THEN list of matching lyrics is returned&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.WHEN lyrics are not found THEN NotFound Status code is retrieved with proper message&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
