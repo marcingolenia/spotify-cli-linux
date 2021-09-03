@@ -22,4 +22,4 @@ jobs:
     - name: Test
       env:
         GENIUS_API_KEY: ${{ secrets.GENIUS_API_KEY }}
-      run: dotnet test --filter Category!=SpotifyIntegration
+      run: dotnet test --filter Category!=Integration

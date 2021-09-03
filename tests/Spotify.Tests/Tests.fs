@@ -9,7 +9,7 @@ open FsUnit
 D-Bus message and perform actual actions by Spotify. Remember to turn on Spotify ;) *)
 
 [<Fact>]
-[<Trait("Category","SpotifyIntegration")>]
+[<Trait("Category","Integration")>]
 let ``GIVEN retrieveCurrentSong WHEN Song is selected in Spotify THEN the title, artist, url, album are retrieved`` () =
     // Act
     let song = retrieveCurrentSong |> Async.RunSynchronously
@@ -21,7 +21,7 @@ let ``GIVEN retrieveCurrentSong WHEN Song is selected in Spotify THEN the title,
     sprintf "%A" song |> Console.WriteLine
     
 [<Fact>]
-[<Trait("Category","SpotifyIntegration")>]
+[<Trait("Category","Integration")>]
 let ``GIVEN send NextSong WHEN Song is changed THEN it is different then previous song`` () =
     // Arrange
     let songBeforeNext = retrieveCurrentSong |> Async.RunSynchronously
@@ -33,7 +33,7 @@ let ``GIVEN send NextSong WHEN Song is changed THEN it is different then previou
     songBeforeNext |> should not' (equal actualSong)
     
 [<Fact>]
-[<Trait("Category","SpotifyIntegration")>]
+[<Trait("Category","Integration")>]
 let ``GIVEN send Play WHEN Song is Paused THEN the resulting status is Playing`` () =
     // Arrange
     Pause |> send |> Async.RunSynchronously
@@ -44,7 +44,7 @@ let ``GIVEN send Play WHEN Song is Paused THEN the resulting status is Playing``
     getStatus |> Async.RunSynchronously |> should equal Playing
 
 [<Fact>]
-[<Trait("Category","SpotifyIntegration")>]
+[<Trait("Category","Integration")>]
 let ``GIVEN send Pause WHEN Song is Playing THEN the resulting status is Paused`` () =
     // Arrange
     Play |> send |> Async.RunSynchronously
