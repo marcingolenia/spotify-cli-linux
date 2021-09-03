@@ -15,4 +15,9 @@
     &lt;TestId&gt;xUnit::07B9F0D5-7681-4D0E-87D7-3376BD27378F::.NETCoreApp,Version=v3.1::Tests.GIVEN title and artist WHEN fetchLyrics matches lyrics THEN list of matching lyrics is returned&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::97776098-95C2-450D-A577-1DF973DDC595::.NETCoreApp,Version=v3.1::Tests.WHEN lyrics are not found THEN NotFound Status code is retrieved with proper message&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f1f9eb5a_002Dc7b5_002D464d_002D9bbe_002Dcac89218eb73/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WHEN lyrics are not found THEN NotFound Status code is retrieved with proper message #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::07B9F0D5-7681-4D0E-87D7-3376BD27378F::net5.0::Tests.GIVEN title and artist WHEN fetchLyrics matches lyrics THEN list of matching lyrics is returned&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

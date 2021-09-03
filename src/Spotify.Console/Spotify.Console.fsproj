@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>Spotify.Dbus</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
@@ -10,9 +10,10 @@
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Argu" Version="6.1.1" />
+      <PackageReference Update="FSharp.Core" Version="5.0.2" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Lyrics.CanaradoApi\Lyrics.CanaradoApi.fsproj" />
+      <ProjectReference Include="..\LyricsApi\LyricsApi.fsproj" />
       <ProjectReference Include="..\Spotify.Dbus\Spotify.Dbus.fsproj" />
     </ItemGroup>
 </Project>

@@ -1,12 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>Lyrics.Api</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="SpotifyBus.fs" />
+        <Compile Include="Lyric.fs" />
+        <Compile Include="GeniusApi.fs" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="Tmds.DBus" Version="0.9.1" />
+      <PackageReference Include="FSharp.Data" Version="4.2.2" />
+      <PackageReference Include="FSharp.Json" Version="0.4.1" />
       <PackageReference Update="FSharp.Core" Version="5.0.2" />
     </ItemGroup>
 </Project>
