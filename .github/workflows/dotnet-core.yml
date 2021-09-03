@@ -20,4 +20,6 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
+      env:
+        super_secret: ${{ secrets.GENIUS_API_KEY }}
       run: dotnet test --filter Category!=SpotifyIntegration
